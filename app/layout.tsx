@@ -3,6 +3,7 @@
 import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono, Source_Serif_4 } from 'next/font/google';
 
+import { Toaster } from '@/components/ui/sonner';
 import { cn } from '@/lib/utils';
 
 import './globals.css';
@@ -43,6 +44,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <Toaster richColors />
       </body>
     </html>
   );
