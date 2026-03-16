@@ -1,10 +1,9 @@
-import { Button } from '@/components/ui/button';
+import Navbar from '@/components/landing/navbar';
 
 const HomePage = () => {
   return (
     <div>
-      <h1 className='text-2xl font-bold underline'>Hello World</h1>
-      <Button>Click Here</Button>
+      <Navbar />
     </div>
   );
 };
