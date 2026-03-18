@@ -28,19 +28,19 @@ const UserButton = ({ user }: UserButtonProps) => {
     <DropdownMenu>
       <DropdownMenuTrigger>
         <Avatar>
-          <AvatarImage src={user.image ?? ''} alt='profile picture' />
-          <AvatarFallback>{user.name[0].toUpperCase()}</AvatarFallback>
+          <AvatarImage src={user?.image ?? ''} alt='profile picture' />
+          <AvatarFallback>{user?.name[0].toUpperCase()}</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent className='w-full max-w-sm'>
         <DropdownMenuItem>
           <Avatar>
-            <AvatarImage src={user.image ?? ''} alt='profile picture' />
-            <AvatarFallback>{user.name[0].toUpperCase()}</AvatarFallback>
+            <AvatarImage src={user?.image ?? ''} alt='profile picture' />
+            <AvatarFallback>{user?.name[0].toUpperCase()}</AvatarFallback>
           </Avatar>
           <div className='flex flex-col'>
-            <span className='text-lg font-semibold'>{user.name}</span>
-            <span className='text-muted-foreground'>{user.email}</span>
+            <span className='text-lg font-semibold'>{user?.name}</span>
+            <span className='text-muted-foreground'>{user?.email}</span>
           </div>
         </DropdownMenuItem>
         <DropdownMenuSeparator />

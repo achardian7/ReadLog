@@ -1,9 +1,12 @@
-import Navbar from '@/components/landing/navbar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'ReadLog | Dashboard',
+};
 
 const DashboardPage = () => {
   return (
     <div>
-      <Navbar />
       <span>DashboardPage</span>
     </div>
   );
