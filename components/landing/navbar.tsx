@@ -9,7 +9,7 @@ const Navbar = async () => {
   const session = await getServerSession();
 
   return (
-    <header className='fixed top-0 left-0 w-full border-b bg-white/80 backdrop-blur-lg'>
+    <header className='fixed top-0 left-0 z-50 w-full border-b bg-white/80 backdrop-blur-lg'>
       <nav className='container mx-auto flex h-16 items-center justify-between px-6 lg:px-0'>
         <Logo />
 

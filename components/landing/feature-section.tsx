@@ -53,7 +53,7 @@ const coreFeatures = [
 
 const FeatureSection = () => {
   return (
-    <section className='container mx-auto mt-16 flex min-h-[calc(100vh-4rem)] items-center justify-center'>
+    <section className='container mx-auto mt-16 flex min-h-[calc(100vh-4rem)] items-center justify-center py-10 lg:py-0'>
       <div className='flex w-full flex-col items-center justify-center gap-4 px-10 lg:px-6'>
         <SectionHeader title='core features' />
         <h2 className='font-serif text-3xl font-bold'>
