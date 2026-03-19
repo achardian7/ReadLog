@@ -1,9 +1,11 @@
+import Image from 'next/image';
+
 import { Button } from '../ui/button';
 import AuthModal from './auth-modal';
 
 const HeroSection = () => {
   return (
-    <section className='container mx-auto mt-16 flex h-[calc(100vh-4rem)] items-center justify-center'>
+    <section className='container mx-auto mt-16 flex min-h-[calc(100vh-4rem)] items-center justify-center'>
       <div className='flex flex-col items-center justify-center gap-6 px-6 text-center lg:px-0'>
         <div className='flex items-center gap-4'>
           <div className='bg-accent-foreground h-0.5 w-8'></div>
@@ -29,6 +31,16 @@ const HeroSection = () => {
             Started for free
           </Button>
         </AuthModal>
+
+        <div>
+          <Image
+            src='/images/hero.png'
+            alt='hero'
+            width={800}
+            height={600}
+            className='rounded-xl object-cover shadow-md'
+          />
+        </div>
       </div>
     </section>
   );

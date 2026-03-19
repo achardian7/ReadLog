@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      'Folio completely changed how I approach reading. Having all my stats in one beautiful place makes me want to read every single day.',
+      'ReadLog completely changed how I approach reading. Having all my stats in one beautiful place makes me want to read every single day.',
     author: {
       name: 'Sari Anggraini',
       role: 'Teacher',
@@ -18,7 +18,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "I've tried 6 book tracking apps. Folio is the only one that feels like it was made for people who actually love books, not just data nerds.",
+      "I've tried 6 book tracking apps. ReadLog is the only one that feels like it was made for people who actually love books, not just data nerds.",
     author: {
       name: 'Bram Wicaksono',
       role: 'Designer',
@@ -30,7 +30,7 @@ const testimonials = [
   {
     id: 3,
     quote:
-      "The reading streak feature is addictive in the best possible way. I've read more this year than the past three years combined, thanks to Folio.",
+      "The reading streak feature is addictive in the best possible way. I've read more this year than the past three years combined, thanks to ReadLog.",
     author: {
       name: 'Dinda Pratiwi',
       role: 'Graduate Student',

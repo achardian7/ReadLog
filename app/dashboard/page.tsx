@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 
+import Dashboard from '@/components/dashboard/dashboard';
+
 export const metadata: Metadata = {
   title: 'ReadLog | Dashboard',
 };
@@ -7,7 +9,7 @@ export const metadata: Metadata = {
 const DashboardPage = () => {
   return (
     <div>
-      <span>DashboardPage</span>
+      <Dashboard />
     </div>
   );
 };
