@@ -55,7 +55,7 @@ const DashboardSidebar = () => {
   return (
     <Sidebar className='w-full max-w-60'>
       <SidebarHeader>
-        <Logo />
+        <Logo color='white' />
       </SidebarHeader>
       <SidebarContent className='mt-10 px-2'>
         <SidebarMenu>
@@ -63,16 +63,16 @@ const DashboardSidebar = () => {
             <SidebarMenuItem key={content.id}>
               <SidebarMenuButton
                 className={cn(
-                  'hover:bg-primary/20 h-12',
+                  'h-12 hover:bg-black/30',
                   pathname === content.path
-                    ? 'bg-primary text-white'
+                    ? 'bg-black/40 text-white'
                     : 'bg-transparent'
                 )}
               >
                 <Link
                   href={content.path}
                   className={cn(
-                    'flex h-full w-full items-center gap-2 text-base font-medium'
+                    'font-mediu flex h-full w-full items-center gap-2 px-4 text-base'
                   )}
                 >
                   <content.icon />
