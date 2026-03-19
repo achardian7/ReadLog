@@ -17,7 +17,7 @@ import {
   DialogTrigger,
 } from '../ui/dialog';
 
-const AuthModal = () => {
+const AuthModal = ({ children }: { children?: React.ReactElement }) => {
   const login = async (provider: 'google' | 'github') => {
     try {
       await signIn.social({
@@ -34,7 +34,7 @@ const AuthModal = () => {
   };
   return (
     <Dialog>
-      <DialogTrigger render={<Button className='px-8'>Sign In</Button>} />
+      <DialogTrigger render={children} />
       <DialogContent>
         <DialogHeader>
           <DialogTitle className='text-xl font-bold'>Welcome Back!</DialogTitle>

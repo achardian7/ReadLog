@@ -1,5 +1,6 @@
 import { getServerSession } from '@/lib/server';
 
+import { Button } from '../ui/button';
 import Logo from '../ui/logo';
 import UserButton from '../ui/user-button';
 import AuthModal from './auth-modal';
@@ -13,7 +14,13 @@ const Navbar = async () => {
         <Logo />
 
         <div>
-          {session?.user ? <UserButton user={session.user} /> : <AuthModal />}
+          {session?.user ? (
+            <UserButton user={session.user} />
+          ) : (
+            <AuthModal>
+              <Button className='rounded-full px-8'>Sign In</Button>
+            </AuthModal>
+          )}
         </div>
       </nav>
     </header>
